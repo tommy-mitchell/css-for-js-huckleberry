@@ -1,15 +1,11 @@
 {
-  "name": "huckleberry",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Joshua Comeau",
-  "scripts": {
-    "start": "live-server --port=9000 --host=localhost ."
-  },
-  "dependencies": {
-    "live-server": "1.2.1"
-  },
-  "engines": {
-    "npm": ">5"
-  }
+	"private": true,
+	"name": "huckleberry",
+	"repository": "tommy-mitchell/css-for-js-huckleberry",
+	"scripts": {
+		"start": "live-server --port=9000 --host=localhost ./src"
+	},
+	"dependencies": {
+		"live-server": "1.2.1"
+	}
 }
