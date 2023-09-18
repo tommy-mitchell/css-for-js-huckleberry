@@ -3,10 +3,105 @@
 	font-family: 'Lato', sans-serif;
 }
 
-html,
-body {
+html, body {
 	margin: 0;
 	padding: 0;
 }
 
 /* Add styles here! */
+
+:root {
+	--spacing-1: 8px;
+	--spacing-2: 16px;
+	--spacing-3: 24px;
+	--spacing-4: 32px;
+	--spacing-5: 48px;
+	--spacing-6: 64px;
+	--spacing-7: 96px;
+	--spacing-8: 128px;
+
+	--text-1: 1rem;
+	--text-2: 1.25rem;
+	--text-3: 1.5rem;
+	--text-4: 2rem;
+
+	/* Green */
+	--color-primary: hsl(160deg, 100%, 30%);
+
+	/* Gold */
+	--color-secondary: hsl(45deg, 100%, 50%);
+	--color-secondary-dark: hsl(45deg, 100%, 40%);
+
+	/* Grays */
+	--color-gray-0: hsl(0deg, 0%, 0%);
+	--color-gray-10: hsl(0deg, 0%, 10%);
+	--color-gray-30: hsl(0deg, 0%, 30%);
+	--color-gray-40: hsl(0deg, 0%, 40%);
+	--color-gray-60: hsl(0deg, 0%, 60%);
+	--color-gray-100: hsl(0deg, 0%, 100%);
+}
+
+body {
+	font-size: var(--text-2);
+	line-height: 1.5;
+}
+
+strong {
+	color: var(--color-primary);
+}
+
+p {
+	margin-block: var(--spacing-2);
+}
+
+.max-width-wrapper {
+	max-width: 800px;
+	margin-inline: auto;
+	padding-inline: var(--spacing-3);
+	background: var(--color-gray-100);
+}
+
+header {
+	padding-block: var(--spacing-6);
+	border-bottom: var(--spacing-1) solid var(--color-gray-60);
+}
+
+header h1 {
+	margin-block-end: var(--spacing-5);
+}
+
+.intro-chunk {
+	max-width: 400px;
+}
+
+main {
+	background: var(--color-gray-40);
+	padding-block-start: var(--spacing-6);
+	padding-block-end: var(--spacing-5);
+}
+
+.card {
+	padding-block-start: var(--spacing-1);
+}
+
+.indented-heading {
+	background-color: var(--color-secondary);
+	border-bottom: var(--spacing-1) solid var(--color-secondary-dark);
+
+	margin-block-start: 0;
+	margin-block-end: var(--spacing-4);
+
+	padding: var(--spacing-2) var(--spacing-3);
+
+	margin-inline-start: calc(-1 * var(--spacing-4));
+	padding-inline-start: var(--spacing-4);
+
+	font-size: var(--text-3);
+	line-height: 1.2;
+
+	max-width: 398px;
+}
+
+main section {
+	border-bottom: var(--spacing-1) solid var(--color-gray-60);
+}
